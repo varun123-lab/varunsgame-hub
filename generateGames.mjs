@@ -10,8 +10,8 @@ export function generateGameLinks(fadeIn = true) {
 
     games.forEach(game => {
         const $link = $("<button>")
-            .addClass(`game-link text-white flex-grow-1 max-w-25${buttonSize}`)
-            .text(game.name)
+            .addClass(`game-link`)
+            .html(`<span>${game.name}</span>`)
             .attr({
                 type: "button",
                 id: game.url,
